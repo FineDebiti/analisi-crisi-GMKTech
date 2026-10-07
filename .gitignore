@@ -1,0 +1,34 @@
+# Ambienti virtuali Python
+.venv/
+venv/
+ENV/
+env/
+
+# Cache Python e bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# File e cartelle di sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# File di configurazione locale / report macchina
+llm_config.json
+report_ambiente.txt
+
+# Cartelle di output e log temporanei
+test_sintetici/_estratti/
+*.log
+
+# Cartelle IDE locali
+.vscode/
+.idea/
+

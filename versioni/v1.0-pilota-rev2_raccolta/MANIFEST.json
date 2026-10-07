@@ -1,0 +1,32 @@
+{
+ "motore": "Preanalisi Crisi v1.0-pilota",
+ "revisione": "rev.2 - raccolta documentale non bloccante (04/10/2026)",
+ "precedente": "versioni/v1.0-pilota (conservata)",
+ "impronta": "e011b22b51892fa51af5ab05613333de563cba97970b958ae0d697d2419ed826",
+ "parametri": {
+  "SOGLIE_V3": {
+   "margine_verde": 0.08,
+   "pn_giallo_su_attivo": -0.1,
+   "pubblici_verde": 0.05,
+   "pubblici_giallo": 0.2,
+   "rapporto_fasce": [
+    1.0,
+    3.0,
+    5.0
+   ],
+   "doc_aggiornati_alta": 0.8,
+   "prossimita_soglia": 0.05
+  },
+  "riferimento_normativo": "decreto dirigenziale 23/04/2026"
+ },
+ "file": {
+  "analisi_crisi_checklist.py": "9e0185e759e3edd5dcdec952d4b01eedaadcea5100c979c0de837f7bfb4fb029",
+  "analisi_crisi_pratica.py": "5665f447a6d7298d9f95edb7407869f2ac2f2fce0a67813f8685e8ede7df16f7",
+  "analisi_crisi_semaforo_v3.py": "7c669ea2dc8fb734b9a84fc91fcb2e4bb2984ff3f022ba9e3171c2b3f680b27d",
+  "analisi_crisi_versione.py": "bda5799e3a82f7edde490087bcb950569d1739c111e347139b04344c0a921cff",
+  "analisi_crisi_word_xml.py": "b218b67d0699b3c8cdc7d65251da0b856764f9ca3a7c3c39ccfa58781334c267",
+  "config_motore.json": "8cc1e58651a702eb7d3865906a31b9e7abc299261454810ebd701ec6ae193eef",
+  "interfaccia_locale.py": "4c3da3d593e261fd37b8a453ac79f887886e9b4a7ac5b6be2a6d9592988ed1a3",
+  "relazione_v3.py": "685c68a010f83dcdd072ff8c068823ecbc76d5f86c6df562060fb81a6376679b"
+ }
+}

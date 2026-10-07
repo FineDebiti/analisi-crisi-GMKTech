@@ -1,0 +1,11 @@
+﻿riga;voce;compilata C;compilata D;stato C;stato D
+10;Ricavi netti (A1);sì;sì;FATTO;FATTO
+11;Variazione rimanenze (A2/A3);no;no;DA VERIFICARE;DA VERIFICARE
+12;Altri ricavi operativi (A5);sì;sì;FATTO;FATTO
+14;Materie prime (B6);sì;sì;FATTO;FATTO
+15;Servizi (B7);sì;sì;FATTO;FATTO
+16;Personale (B9);sì;sì;FATTO;FATTO
+17;Altri costi operativi (B8/B11/B14);sì;sì;INFERENZA;INFERENZA
+19;Ammortamenti e svalutazioni (B10);no;no;DA VERIFICARE;DA VERIFICARE
+21;Oneri/proventi finanziari netti;sì;sì;DA VERIFICARE;DA VERIFICARE
+23;Imposte;sì;sì;FATTO;FATTO

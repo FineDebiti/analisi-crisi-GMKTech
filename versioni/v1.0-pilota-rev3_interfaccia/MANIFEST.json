@@ -1,0 +1,48 @@
+{
+ "motore": "Preanalisi Crisi v1.0-pilota",
+ "revisione": "rev.3 - correzioni di presentazione, interfaccia e installazione (04/10/2026)",
+ "precedente": "versioni/v1.0-pilota-rev2_raccolta (conservata)",
+ "modifiche": [
+  "condizioni di criticita' con i valori realmente rilevati",
+  "nuovo stato 'inesistente' (e 'non pertinente') che non sospende scenari",
+  "stato della conclusione breve; motivi una sola volta nella tabella scenari",
+  "dicitura: approvata come provvisoria distinta da non consolidata",
+  "importi in euro e periodo di riferimento",
+  "interfaccia: nome operatore ricordato, installatore Mac"
+ ],
+ "regole_analitiche_modificate": "nessuna; parametri SOGLIE_V3 invariati",
+ "impronta": "a09b02b7d713fbf06d11ef5b3c8025cf541db80146e1fc3291fecdca0e6d61a1",
+ "parametri": {
+  "SOGLIE_V3": {
+   "margine_verde": 0.08,
+   "pn_giallo_su_attivo": -0.1,
+   "pubblici_verde": 0.05,
+   "pubblici_giallo": 0.2,
+   "rapporto_fasce": [
+    1.0,
+    3.0,
+    5.0
+   ],
+   "doc_aggiornati_alta": 0.8,
+   "prossimita_soglia": 0.05
+  },
+  "riferimento_normativo": "decreto dirigenziale 23/04/2026"
+ },
+ "file": {
+  "analisi_crisi/versione.py": "c2764a88f17225538dc301bd922d34f99be1bf6a8fa6cfc26e33c7bf5c9de59b",
+  "analisi_crisi/pratica.py": "cbfc986d8f3e2982bbc8f74cee754bad8cc80883abe8ecfe126a80093794487c",
+  "analisi_crisi/checklist.py": "17f4e2d2c52952d80b0a52561971f45306869ad3ac60d3acecfd5b349ebf049a",
+  "analisi_crisi/semaforo_v3.py": "7c669ea2dc8fb734b9a84fc91fcb2e4bb2984ff3f022ba9e3171c2b3f680b27d",
+  "analisi_crisi/word_xml.py": "b218b67d0699b3c8cdc7d65251da0b856764f9ca3a7c3c39ccfa58781334c267",
+  "analisi_crisi/dati_pratica.py": "2b752bac490f3a15e59529c9aa4ceb11623f0a101c3c9527630b75ebd3d76ecd",
+  "analisi_crisi/ui_pratica.py": "d800564007ca2eb1e06e5f12864b03417ab585879559db03a23b2b6b7a5c5db5",
+  "analisi_crisi/pdf_preanalisi.py": "8f96fbbe7edd8fd4fad9e0e61fff9ac72487f0dc4042ee0ca37da888de527a6e",
+  "relazione_v3.py": "685c68a010f83dcdd072ff8c068823ecbc76d5f86c6df562060fb81a6376679b",
+  "interfaccia_locale.py": "edd48e8846d6144bf82754e5f36ea9826ed10063eb3c3a58fbf6ba8f5e74f21f",
+  "config_motore.json": "8cc1e58651a702eb7d3865906a31b9e7abc299261454810ebd701ec6ae193eef",
+  "Installa_Mac.command": "e8f85d4df1b4e13e3293a9ea1ce37baacff9ec3afb542d6bc36d60d722e5aba5",
+  "Avvia_Interfaccia.command": "4a15cc8830bad30e182a35c939b268934de3df8828fad4a28297c1f4ad66e040",
+  "Arresta_Interfaccia.command": "54d67121765041963a2747065274b41ef6a3b49b8ac1ed92a8354655bf8c9d3f",
+  "requirements.txt": "637e523b26a006136b15f02c651b1a66a505cc6960db63f270a65ad26447b170"
+ }
+}

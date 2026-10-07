@@ -1,0 +1,11 @@
+﻿riga;voce;compilata ?1;compilata ?2;stato ?1;stato ?2
+10;Ricavi netti (A1);sì;sì;DA VERIFICARE;DA VERIFICARE
+11;Variazione rimanenze (A2/A3);no;no;DA VERIFICARE;DA VERIFICARE
+12;Altri ricavi operativi (A5);sì;sì;DA VERIFICARE;DA VERIFICARE
+14;Materie prime (B6);sì;sì;DA VERIFICARE;DA VERIFICARE
+15;Servizi (B7);sì;sì;DA VERIFICARE;DA VERIFICARE
+16;Personale (B9);sì;sì;DA VERIFICARE;DA VERIFICARE
+17;Altri costi operativi (B8/B11/B14);sì;sì;DA VERIFICARE;DA VERIFICARE
+19;Ammortamenti e svalutazioni (B10);no;no;DA VERIFICARE;DA VERIFICARE
+21;Oneri/proventi finanziari netti;sì;sì;DA VERIFICARE;DA VERIFICARE
+23;Imposte;sì;sì;DA VERIFICARE;DA VERIFICARE

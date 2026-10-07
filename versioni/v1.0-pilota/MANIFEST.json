@@ -1,0 +1,31 @@
+{
+ "motore": "Preanalisi Crisi v1.0-pilota",
+ "data_congelamento": "2026-10-04",
+ "stato": "CONGELATO per la sperimentazione sulle prime tre pratiche (metodo approvato; giudizi su Eurocasa e Mercurio NON validati)",
+ "impronta_motore_e_parametri": "9d849a8fe89a1685a51f802576f8d4c9b58b57aeee4af486334059efdc522e0f",
+ "parametri": {
+  "SOGLIE_V3": {
+   "margine_verde": 0.08,
+   "pn_giallo_su_attivo": -0.1,
+   "pubblici_verde": 0.05,
+   "pubblici_giallo": 0.2,
+   "rapporto_fasce": [
+    1.0,
+    3.0,
+    5.0
+   ],
+   "doc_aggiornati_alta": 0.8,
+   "prossimita_soglia": 0.05
+  },
+  "riferimento_normativo": "decreto dirigenziale 23/04/2026"
+ },
+ "file": {
+  "analisi_crisi_pratica.py": "555e3230c3447bbaf2904a88b837343cdd6bd8d44095b2a12f5d9bffe7a57949",
+  "analisi_crisi_semaforo_v3.py": "7c669ea2dc8fb734b9a84fc91fcb2e4bb2984ff3f022ba9e3171c2b3f680b27d",
+  "analisi_crisi_versione.py": "d0c0206d07278ef94dbc84a24d67c5f610a903bbb468005569f9153fb3e57c63",
+  "analisi_crisi_word_xml.py": "b218b67d0699b3c8cdc7d65251da0b856764f9ca3a7c3c39ccfa58781334c267",
+  "config_motore.json": "8cc1e58651a702eb7d3865906a31b9e7abc299261454810ebd701ec6ae193eef",
+  "interfaccia_locale.py": "5b45ce71d7656de264db0487fc6af8dbbdacf0bb51b191b80792380d685e4e81",
+  "relazione_v3.py": "685c68a010f83dcdd072ff8c068823ecbc76d5f86c6df562060fb81a6376679b"
+ }
+}

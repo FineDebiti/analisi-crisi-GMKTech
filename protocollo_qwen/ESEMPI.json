@@ -1,0 +1,112 @@
+{
+ "avvertenza": "ESEMPIO SINTETICO con numeri diversi dalla DEMO e da ogni pratica reale: serve solo a mostrare il formato e le regole (null per il mancante, parentesi = negativo, citazione alla lettera).",
+ "documenti": [
+  {
+   "id": 1,
+   "nome": "esempio_bilancio.pdf",
+   "pagine": [
+    {
+     "pagina": 1,
+     "testo": "SOCIETA ESEMPIO S.R.L. - ESEMPIO SINTETICO\nBilancio abbreviato al 31-12-2024 (importi in euro)\n31-12-2024 31-12-2023\nIV - Disponibilita liquide 20.400 15.000\nTotale attivo 500.000 480.000\nTotale patrimonio netto (12.000) 8.000"
+    },
+    {
+     "pagina": 2,
+     "testo": "Passivo (importi in euro)\nD) Debiti\nesigibili entro l'esercizio successivo 300.000 280.000\nesigibili oltre l'esercizio successivo 150.000 140.000\nTotale debiti 460.000 440.000\nTotale passivo 500.000 480.000"
+    }
+   ]
+  }
+ ],
+ "risposta_attesa": {
+  "dati": [
+   {
+    "campo": "disponibilita_liquide",
+    "valore": 20400,
+    "documento": 1,
+    "pagina": 1,
+    "periodo": "2024-12-31",
+    "citazione": "IV - Disponibilita liquide 20.400 15.000",
+    "natura": "FATTO",
+    "motivazione": "Prima colonna = esercizio 2024."
+   },
+   {
+    "campo": "totale_attivo",
+    "valore": 500000,
+    "documento": 1,
+    "pagina": 1,
+    "periodo": "2024-12-31",
+    "citazione": "Totale attivo 500.000 480.000",
+    "natura": "FATTO",
+    "motivazione": "Prima colonna."
+   },
+   {
+    "campo": "patrimonio_netto",
+    "valore": -12000,
+    "documento": 1,
+    "pagina": 1,
+    "periodo": "2024-12-31",
+    "citazione": "Totale patrimonio netto (12.000) 8.000",
+    "natura": "FATTO",
+    "motivazione": "Parentesi = importo negativo: patrimonio netto negativo."
+   },
+   {
+    "campo": "debiti_totali",
+    "valore": 460000,
+    "documento": 1,
+    "pagina": 2,
+    "periodo": "2024-12-31",
+    "citazione": "Totale debiti 460.000 440.000",
+    "natura": "FATTO",
+    "motivazione": "Prima colonna."
+   }
+  ],
+  "dati_mancanti": [
+   "debiti_bancari",
+   "debiti_pubblici",
+   "crediti_soci",
+   "ricavi",
+   "valore_produzione",
+   "costi_produzione",
+   "ammortamenti"
+  ],
+  "normalizzazioni": [],
+  "incongruenze": [
+   {
+    "descrizione": "Debiti totali (460.000) maggiori della somma delle sole due righe esigibili (300.000 + 150.000 = 450.000): differenza di 10.000 non spiegata nelle pagine fornite.",
+    "dati_coinvolti": [
+     {
+      "documento": 1,
+      "pagina": 2,
+      "citazione": "Totale debiti 460.000 440.000"
+     }
+    ],
+    "gravita_proposta": "MINORE"
+   }
+  ],
+  "duplicazioni": [],
+  "scenari": [
+   {
+    "scenario": "Liquidazione del patrimonio",
+    "stato": "GIUDIZIO SOSPESO",
+    "motivi": [
+     "Manca l'elenco analitico dei creditori e il valore di realizzo dell'attivo."
+    ],
+    "dati_usati": [
+     "patrimonio_netto",
+     "totale_attivo"
+    ],
+    "natura": "INFERENZA"
+   }
+  ],
+  "richieste_prioritarie": [
+   {
+    "ordine": 1,
+    "richiesta": "Dettaglio dei debiti (nota integrativa)",
+    "perche": "Spiega la differenza di 10.000 e permette di separare debiti bancari e pubblici",
+    "riattiva": "Rapporto debito netto/EBITDA e scenario di transazione"
+   }
+  ],
+  "note_per_il_titolare": [
+   "Esempio sintetico: i valori non sono quelli della pratica."
+  ]
+ }
+}

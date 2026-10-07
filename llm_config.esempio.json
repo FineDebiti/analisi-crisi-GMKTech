@@ -1,0 +1,13 @@
+{
+  "abilitato": true,
+  "endpoint": "http://127.0.0.1:8080/v1",
+  "modello": "",
+  "etichetta_modello": "",
+  "quantizzazione": "",
+  "contesto_configurato": null,
+  "temperatura": 0.0,
+  "seed": 7,
+  "max_token": 6000,
+  "timeout_s": 3600,
+  "formato_json": true
+}

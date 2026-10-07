@@ -1,0 +1,105 @@
+{
+ "descrizione": "Verita' di riferimento DEMO. 'dati' = valori presenti nei PDF (prova B). 'mancanti' = non presenti nei PDF: devono restare non disponibili. 'scenari_motore' = stato calcolato dal motore deterministico (riferimento, non verita' sul mondo).",
+ "dati": [
+  {
+   "campo": "ricavi",
+   "valore": 1250000,
+   "documento": 2,
+   "pagina": 3,
+   "periodo": "2025"
+  },
+  {
+   "campo": "valore_produzione",
+   "valore": 1274500,
+   "documento": 2,
+   "pagina": 3,
+   "periodo": "2025"
+  },
+  {
+   "campo": "costi_produzione",
+   "valore": 1169000,
+   "documento": 2,
+   "pagina": 3,
+   "periodo": "2025"
+  },
+  {
+   "campo": "ammortamenti",
+   "valore": 40500,
+   "documento": 2,
+   "pagina": 3,
+   "periodo": "2025"
+  },
+  {
+   "campo": "ricavi_prec",
+   "valore": 1120000,
+   "documento": 2,
+   "pagina": 3,
+   "periodo": "2024"
+  },
+  {
+   "campo": "totale_attivo",
+   "valore": 806500,
+   "documento": 2,
+   "pagina": 1,
+   "periodo": "2025"
+  },
+  {
+   "campo": "patrimonio_netto",
+   "valore": 206300,
+   "documento": 2,
+   "pagina": 2,
+   "periodo": "2025"
+  },
+  {
+   "campo": "debiti_totali",
+   "valore": 497000,
+   "documento": 2,
+   "pagina": 2,
+   "periodo": "2025"
+  },
+  {
+   "campo": "disponibilita_liquide",
+   "valore": 61300,
+   "documento": 2,
+   "pagina": 1,
+   "periodo": "2025"
+  }
+ ],
+ "mancanti": [
+  "debiti_bancari",
+  "debiti_pubblici",
+  "crediti_soci",
+  "liquidita_utilizzabile"
+ ],
+ "incongruenze_attese": [
+  {
+   "descrizione": "Roll-forward del patrimonio netto 2024->2025: le riserve crescono di 10.400 (legale +4.000, altre +6.400) a fronte di un utile 2024 di 7.900; differenza di 2.500 non spiegata dai documenti",
+   "origine": "individuata durante la verifica della DEMO; non intenzionale nei dati sintetici; verosimilmente MINORE"
+  }
+ ],
+ "nota_incongruenze": "Per il resto la DEMO e' coerente (attivo = passivo, A-B = 105.500, somme delle parti). Ogni altra incongruenza proposta e' un possibile falso positivo da giudicare. L'utile 59.900 compare in due prospetti ed e' coerente.",
+ "scenari_motore": {
+  "Continuità aziendale / risanamento": "GIUDIZIO SOSPESO",
+  "Ristrutturazione dei debiti": "GIUDIZIO SOSPESO",
+  "Liquidazione del patrimonio": "GIUDIZIO SOSPESO",
+  "Transazione e rateazione dei debiti pubblici": "VALUTABILE IN VIA PRELIMINARE"
+ },
+ "richieste_utili": {
+  "tesoreria": [
+   "tesoreria",
+   "flussi di cassa",
+   "scadenzario"
+  ],
+  "elenco creditori": [
+   "creditori"
+  ],
+  "estratto di ruolo": [
+   "ruolo",
+   "riscossione"
+  ],
+  "centrale rischi": [
+   "centrale",
+   "rischi"
+  ]
+ }
+}

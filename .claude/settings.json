@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//Users/aureliobentivegna/Riservato_AnalisiCrisi)",
+      "Read(//Users/aureliobentivegna/Riservato_AnalisiCrisi/**)",
+      "Edit(//Users/aureliobentivegna/Riservato_AnalisiCrisi/**)",
+      "Bash(*Riservato_AnalisiCrisi*)",
+      "Read(//Users/aureliobentivegna/Documents/ANALISI CRISI/DATI_REALI_LOCALI)",
+      "Read(//Users/aureliobentivegna/Documents/ANALISI CRISI/DATI_REALI_LOCALI/**)",
+      "Edit(//Users/aureliobentivegna/Documents/ANALISI CRISI/DATI_REALI_LOCALI/**)",
+      "Bash(*DATI_REALI_LOCALI*)",
+      "Read(//Users/aureliobentivegna/Desktop/CAMPIONE_TEST_PDF/01_MERCURIO_ORIGINALI/**)",
+      "Edit(//Users/aureliobentivegna/Desktop/CAMPIONE_TEST_PDF/01_MERCURIO_ORIGINALI/**)",
+      "Read(//Users/aureliobentivegna/Desktop/CAMPIONE_TEST_PDF/02_EUROCASA_ORIGINALI/**)",
+      "Edit(//Users/aureliobentivegna/Desktop/CAMPIONE_TEST_PDF/02_EUROCASA_ORIGINALI/**)",
+      "Edit(//Users/aureliobentivegna/Documents/ANALISI CRISI/Template_Preanalisi_Economico-Finanziaria_CNC.docx)",
+      "WebFetch",
+      "WebSearch",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(scp *)",
+      "Bash(sftp *)",
+      "Bash(rsync *)",
+      "Bash(ssh *)",
+      "Bash(nc *)"
+    ],
+    "ask": [
+      "Bash(*pip install*)",
+      "Bash(*pip3 install*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false
+  }
+}

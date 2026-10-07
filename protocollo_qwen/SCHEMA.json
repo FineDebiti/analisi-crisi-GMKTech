@@ -1,0 +1,21 @@
+{
+ "descrizione": "Schema della risposta del modello. Un solo oggetto JSON. Campi non pertinenti alla prova: lista vuota.",
+ "dati": [{
+   "campo": "codice del campo tra quelli elencati nella sezione CAMPI (es. ricavi, patrimonio_netto)",
+   "valore": "numero in euro (negativo se tra parentesi o con segno meno) oppure null se non trovato",
+   "unita_originale": "euro | migliaia di euro | altro, come indicato nel documento (opzionale)",
+   "documento": "id intero del documento",
+   "pagina": "numero intero di pagina come nel marcatore PAG",
+   "periodo": "data o anno di riferimento della colonna usata (AAAA-MM-GG oppure AAAA)",
+   "citazione": "riga copiata alla lettera dal testo della pagina che contiene il numero",
+   "natura": "FATTO | DICHIARAZIONE | CALCOLO | INFERENZA | IPOTESI",
+   "motivazione": "una frase"
+ }],
+ "dati_mancanti": ["codici dei campi non trovati nei documenti (mai sostituiti con zero)"],
+ "normalizzazioni": [{"descrizione": "...", "motivazione": "...", "dati": ["campo"], "effetto": "come cambierebbe il valore", "natura": "INFERENZA | IPOTESI"}],
+ "incongruenze": [{"descrizione": "...", "dati_coinvolti": [{"documento": 1, "pagina": 1, "citazione": "..."}], "gravita_proposta": "SOSTANZIALE | MINORE"}],
+ "duplicazioni": [{"descrizione": "...", "dati_coinvolti": [{"documento": 1, "pagina": 1}]}],
+ "scenari": [{"scenario": "uno dei 4 scenari del protocollo", "stato": "VALUTABILE IN VIA PRELIMINARE | GIUDIZIO SOSPESO | NON VALUTABILE", "motivi": ["..."], "dati_usati": ["campo o documento/pagina"], "natura": "INFERENZA | IPOTESI"}],
+ "richieste_prioritarie": [{"ordine": 1, "richiesta": "...", "perche": "...", "riattiva": "scenario o giudizio"}],
+ "note_per_il_titolare": ["dubbi, osservazioni, limiti; mai modifiche applicate"]
+}
